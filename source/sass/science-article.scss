@@ -1,0 +1,38 @@
+.science-article {
+	display: none;
+}
+
+@media (min-width: $width-tablet) {
+
+	.science-article {
+		display: flex;
+		min-width: 660px;
+		min-height: 400px;
+	}
+
+	.science-article__wrapper {
+		width: 660px;
+		height: 400px;
+		background-image: url(../img/24.png);
+		background-repeat: no-repeat;
+		background-position: left 20px top 59px;
+
+		margin: 0 auto;
+	}
+
+	.science-article__desctiption {
+		margin-top: 102px;
+		margin-left: 329px;
+	}
+
+	.science-article__title {
+		@include font-style (30px, 36px, 700);
+		margin: 0;
+	}
+
+	.science-article__link {
+		color: #d22856;
+		text-decoration: underline;
+	}
+
+}

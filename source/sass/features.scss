@@ -1,0 +1,96 @@
+.features {
+	min-width: $width-mobile;
+
+	margin: 0 auto;
+
+	display: flex;
+	flex-direction: column;
+
+	background-color: $grey;
+}
+
+.features__background-wrapper {
+	background-color: $white;
+}
+
+.features__slogan-wrapper {
+	height: 217px;
+	width: 320px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
+.features__list-wrapper {
+	width: 320px;
+	height: 755px;
+	padding: 0 20px;
+	margin: 0 auto;
+
+	background-image: url(../img/iphone_screen.png);
+	background-repeat: no-repeat;
+	background-position: bottom -42px right 50%;
+}
+
+.features__list-wrapper::before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 32px 320px 0 0;
+	border-color: $white $grey transparent transparent;
+}
+
+.features__slogan {
+	@include font-style(24px, 30px, 300);
+	text-align: center;
+}
+
+.features__item {
+	text-align: center;
+}
+
+.features__title {
+	@include font-style(18px, 16px, 700);
+}
+
+.features__description {
+	@include font-style(14px, 24px, 400);
+}
+
+@media (min-width: $width-tablet) {
+
+	.features {
+		min-width: 660px;
+	}
+
+	.features__slogan-wrapper {
+		min-width: 660px;
+		padding-top: 50px;
+	}
+
+	.features__slogan {
+		@include font-style(40px, 50px, 300);	
+		margin: 0;
+	}
+
+	.features__list {
+		margin-left: 320px;
+	}
+
+	.features__list-wrapper {
+		width: 660px;
+		height: 433px;
+		padding: 0 20px;
+		margin: 0 auto;
+
+		background-image: url(../img/iphone_screen_table.png);
+		background-repeat: no-repeat;
+		background-position: bottom -67px left 20px;
+	}
+
+	.features__item {
+		text-align: left;
+	}
+
+}

@@ -1,0 +1,20 @@
+.main-nav__list {
+	display: flex;
+	flex-direction: column;
+}
+
+.site-list__item {
+	display: none;
+	height: 63px;
+	background-color: $main-color;
+
+	text-align: center;
+
+	@include font-style(18px, 32px, 700);
+	text-transform: uppercase;
+	color: $white;
+
+	box-shadow: 0 1px 0 $black, inset 0 1px 0 transparentize($white,.85);	
+
+	margin-top: 1px;
+}
