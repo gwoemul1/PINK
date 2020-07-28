@@ -126,13 +126,16 @@
 				<div class="review__wrapper slider">
 					<div class="review__list slider__list">
 						<blockquote class="review__item review__item--active slider__list">
-							<cite class="review__author-name">Николай Петров</cite>
+							<cite class="review__author-name">
+								Николай Петров<br>
+								<span class="review__author-info">25 лет, водитель трамвая</span>
+							</cite>
 							<span class="review__quote">
-								«Это приложение перевернуло мой мир<br>
-								и позволило по-новому взглянуть на<br>
-								привычные серые вещи! А еще я<br>
-								познакомился со своей будущей женой<br>
-								в комментариях к выложенной<br>
+								«Это приложение перевернуло мой мир
+								и позволило по-новому взглянуть на
+								привычные серые вещи! А еще я
+								познакомился со своей будущей женой
+								в комментариях к выложенной
 								фотографии!»
 							</span>
 						</blockquote>
@@ -171,7 +174,7 @@
 
 			<section class="tariff">
 				<div class="tariff__wrapper slider">
-					<!-- <table class="tariff__table table">
+					<table class="tariff__table tariff__table--tablet table">
 						<tr>
 							<td></td>
 							<td class="table__cell table__cell--top">
@@ -191,28 +194,29 @@
 							<td class="table__cell">
 								<p class="table__content table__content--feature">Розовый фильтр</p>
 							</td>
-							<td class="table__content table__content--avail"><span class="visually-hidden">Доступно</span></td>
-							<td class="table__content table__content--avail"><span class="visually-hidden">Доступно</span></td>
-							<td class="table__content table__content--avail"><span class="visually-hidden">Доступно</span></td>
+							<td class="table__cell table__cell--avail"><span class="visually-hidden">Доступно</span></td>
+							<td class="table__cell table__cell--avail"><span class="visually-hidden">Доступно</span></td>
+							<td class="table__cell table__cell--avail"><span class="visually-hidden">Доступно</span></td>
 						</tr>
 						<tr>
 							<td class="table__cell">
 								<p class="table__content table__content--feature">Смайлики</p>
 							</td>
-							<td class="table__content table__content--no-avail"><span class="visually-hidden">Не оступно</span></td>
-							<td class="table__content table__content--avail"><span class="visually-hidden">Доступно</span></td>
-							<td class="table__content table__content--avail"><span class="visually-hidden">Доступно</span></td>
+							<td class="table__cell table__cell--no-avail"><span class="visually-hidden">Не оступно</span></td>
+							<td class="table__cell table__cell--avail"><span class="visually-hidden">Доступно</span></td>
+							<td class="table__cell table__cell--avail"><span class="visually-hidden">Доступно</span></td>
 						</tr>
 						<tr>
 							<td class="table__cell">
 								<p class="table__content table__content--feature">Комментарии</p>
 							</td>
-							<td class="table__content table__content--no-avail"><span class="visually-hidden">Не оступно</span></td>
-							<td class="table__content table__content--no-avail"><span class="visually-hidden">Не оступно</span></td>
-							<td class="table__content table__content--avail"><span class="visually-hidden">Доступно</span></td>
+							<td class="table__cell table__cell--no-avail"><span class="visually-hidden">Не оступно</span></td>
+							<td class="table__cell table__cell--no-avail"><span class="visually-hidden">Не оступно</span></td>
+							<td class="table__cell table__cell--avail"><span class="visually-hidden">Доступно</span></td>
 						</tr>
-					</table> -->
-					<table class="tariff__table table">
+					</table>
+
+					<table class="tariff__table tariff__table--mobile table">
 						<tr>
 							<td class="table__cell table__cell--top">
 								<p class="table__content table__content--top-name">База</p>
@@ -273,7 +277,7 @@
 
 		<footer class="page-footer">
 
-			<div class="feedback">
+			<section class="feedback">
 				<div class="feedback__wrapper">
 					<p class="feedback__title">
 						Остались вопросы?<br>
@@ -293,32 +297,49 @@
 							<span class="feedback__description feedback__description--adress">ул. Большая<br>Конюшенная, 19/8</span>
 						</li>
 					</ul>
-				</div>
-				<div class="page-footer__map"></div>				
-			</div>
+				</div>								
+			</section>
 
-			<div class="bottomline">
-				<a class="bottomline__logo">
-					<img class="bottomline__logo-image" src="" width="147" height="41" alt="Приложение PINK">
-				</a>
-				<div class="bottomline__social social">
-					<ul class="social__list site-list">
-            <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
-            </li>
-					</ul>
+			<section class="map">
+				<div class="map__wrapper"></div>
+			</section>
+
+			<section class="bottomline">
+				<div class="bottomline__wrapper">
+					<a class="bottomline__logo">
+						<img class="bottomline__logo-image" src="../img/logotype-blue-tablet.png" width="147" height="41" alt="Приложение PINK">
+					</a>
+					<div class="bottomline__social social">
+						<ul class="social__list site-list">
+							<li class="social__item">
+								<a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">
+									<span class="visually-hidden">Мы в Твиттере</span>
+									<img class="copyright__logo" src="../img/twitter.png" width="18" height="14" alt="Ссылка на Твиттер">
+								</a>
+							</li>
+							<li class="social__item">
+								<a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+									<span class="visually-hidden">Мы в Фейсбуке</span>
+									<img class="copyright__logo" src="../img/facebook.png" width="9" height="18" alt="Ссылка на Фейсбук">
+								</a>
+							</li>
+							<li class="social__item">
+								<a class="social__link social__link--youtube" href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g">
+									<span class="visually-hidden">Мы в Ютьбе</span>
+									<img class="copyright__logo" src="../img/youtube.png" width="15" height="13" alt="Ссылка на Ютьюб">
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="bottomline__copyright copyright">
+						<span class="copyright__text">Разработано</span>
+						<a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+							<span class="visually-hidden">HTML Academy</span>
+							<img class="copyright__logo" src="../img/htmlacademy.png" width="27" height="34" alt="Логотип HTML Academy">
+							</a>
+					</div>
 				</div>
-				<div class="bottomline__copyright copyright">
-          <b class="copyright__text">Разработано:</b>
-          <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        </div>
-			</div>
+			</section>
 
 		</footer>
 
