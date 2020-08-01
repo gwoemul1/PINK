@@ -41,3 +41,21 @@
 	}
 
 }
+
+@media (min-width: $width-desktop) {
+
+	.map {
+		min-width: 1200px;
+		height: 400px;
+		background-image: url(../img/map_display.jpg);
+	}
+
+	.map__wrapper {
+		width: 1200px;
+	}
+
+	.map__wrapper::before {
+		border-width: 103px 600px 0 600px;
+	}
+
+}

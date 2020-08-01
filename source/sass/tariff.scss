@@ -159,3 +159,41 @@ margin: 0 auto;
 	}
 
 }
+
+@media (min-width: $width-desktop) {
+
+	.tariff {
+		min-width: 1200px;
+		height: 443px;
+	}
+
+	.tariff__wrapper {
+		width: 1200px;
+	}
+
+	.table__cell {
+		display: table-cell;
+		width: 233px;
+		height: 59px;
+
+		&--top {
+			height: 94px;
+		}
+
+	}
+
+	.table__content {
+		&--top-name {
+			@include font-style (18px, 16px, 700);
+		}
+	
+		&--top-price {
+			@include font-style (24px, 0, 300);
+		}
+	
+		&--feature {
+			@include font-style (18px, 0);
+		}
+	}
+
+}

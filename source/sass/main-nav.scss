@@ -3,7 +3,7 @@
 	flex-direction: column;
 }
 
-.site-list__item {
+.site-list__link {
 	display: none;
 	height: 63px;
 	background-color: $main-color;
@@ -17,4 +17,32 @@
 	box-shadow: 0 1px 0 $black, inset 0 1px 0 transparentize($white,.85);	
 
 	margin-top: 1px;
+}
+
+@media (min-width: $width-desktop) {
+
+	.main-nav__list {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.main-nav__wrapper {
+		min-width: 640px;
+	}
+
+	.site-list__link {
+		display: flex;
+		align-items: center;
+
+		min-height: 110px;
+
+		@include font-style(18px, 18px);
+
+		background-color: transparent;
+		box-shadow: none;
+		text-transform: none;
+
+		margin: 0;
+		padding: 0 10px;
+	}
 }

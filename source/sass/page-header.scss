@@ -32,7 +32,8 @@
 	margin-left: 20px;
 }
 
-.page-header__logo-image--tablet {
+.page-header__logo-image--tablet,
+.page-header__logo-image--desktop {
 	display: none;
 }
 
@@ -80,7 +81,8 @@
 		margin-left: 20px;
 	}
 
-	.page-header__logo-image--mobile {
+	.page-header__logo-image--mobile,
+	.page-header__logo-image--desktop {
 		display: none;
 	}
 
@@ -92,6 +94,47 @@
 		display: inline;
 		top: 207px;
 		left: 76px;
+	}
+
+}
+
+@media (min-width: $width-desktop) {
+
+	.page-header {
+		min-width: 1200px;
+		min-height: 853px;
+		background-image: url(../img/iphone_6_desktop.jpg);
+	}
+
+	.page-header__wrapper {
+		min-width: 1200px;
+	}
+
+	.page-header__top-line-wrapper {
+		padding: 0 120px;
+	}
+
+	.page-header__logo-image--mobile,
+	.page-header__logo-image--tablet {
+		display: none;
+	}
+
+	.page-header__logo-image--desktop {
+		display: block;
+		margin-top: 27px;
+		margin-left: 10px;
+	}
+
+	.page-header__toggle {
+		display: none;
+	}
+
+	.page-header__slogan {
+		display: inline;
+		top: 216px;
+		left: 166px;
+
+		@include font-style (50px, 60px, 300);
 	}
 
 }

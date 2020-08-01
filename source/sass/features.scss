@@ -94,3 +94,70 @@
 	}
 
 }
+
+@media (min-width: $width-desktop) {
+
+	.features {
+		min-width: 1200px;
+	}
+
+	.features__slogan-wrapper {
+		min-width: 1200px;
+		min-height: 330px;
+	}
+
+	.features__slogan {
+		@include font-style(50px, 60px, 300);	
+	}
+
+	.features__list-wrapper {
+		min-width: 940px;
+		min-height: 700px;
+		background-image: none;
+	}
+
+	.features__list {
+		margin: 0;
+
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.features__item {
+		width: 300px;
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		padding-top: 303px;
+	}
+
+	.features__item:nth-child(1) {
+		background-image: url(../img/feature_iphone_01.png);
+		background-repeat: no-repeat;
+	}
+
+	.features__item:nth-child(2) {
+		background-image: url(../img/feature_iphone_02.png);
+		background-repeat: no-repeat;
+	}
+
+	.features__item:nth-child(3) {
+		background-image: url(../img/feature_iphone_03.png);
+		background-repeat: no-repeat;
+	}
+
+	.features__title {
+		@include font-style(30px, 30px, 700);
+		text-align: center;
+		
+	}
+
+	.features__description {
+		@include font-style(18px, 30px);
+		text-align: center;
+		padding: 0 30px;
+	}
+
+}

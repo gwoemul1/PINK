@@ -98,3 +98,19 @@
 	}
 	
 }
+
+@media (min-width: $width-desktop) {
+
+	.download {
+		width: 1200px;
+		min-height: 403px;
+		padding: 0 120px;
+	}	
+
+	.download__wrapper {
+		margin-top: -403px;
+		margin-left: 20px;
+
+		min-height: 276px;
+	}
+}

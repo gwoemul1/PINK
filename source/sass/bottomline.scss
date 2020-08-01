@@ -5,7 +5,8 @@
 @media (min-width: $width-tablet) {
 
 	.bottomline {
-		display: block;
+		display: flex;
+		justify-content: center;
 
 		min-width: 660px;
 		min-height: 127px;
@@ -13,10 +14,11 @@
 
 	.bottomline__wrapper {
 		display: flex;
-		justify-content: space-between;;
+		justify-content: space-between;
+		align-items: center;
 
 		width: 660px;
-		margin: 36px auto 0;
+		margin: 0 auto;
 		padding: 0 20px;
 	}
 
@@ -41,7 +43,24 @@
 		width: 127px;
 		display: flex;
 		justify-content: space-between;
+		align-items: flex-start;
+	}
+
+}
+
+@media (min-width: $width-desktop) {
+
+	.bottomline {
+		min-width: 1200px;
+		min-height: 197px;
+	}
+
+	.bottomline__wrapper {
+		width: 960px;
 		align-items: center;
+
+		padding: 0 10px;
+		margin: 0 120px;
 	}
 
 }

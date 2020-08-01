@@ -11,3 +11,11 @@
 	}
 
 }
+
+@media (min-width: $width-desktop) {
+
+		.page-footer {
+			min-width: 1200px;
+		}
+
+}

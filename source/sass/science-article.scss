@@ -8,6 +8,7 @@
 		display: flex;
 		min-width: 660px;
 		min-height: 400px;
+		margin: 0 auto;
 	}
 
 	.science-article__wrapper {
@@ -33,6 +34,30 @@
 	.science-article__link {
 		color: #d22856;
 		text-decoration: underline;
+	}
+
+}
+
+@media (min-width: $width-desktop) {
+	.science-article {
+		min-width: 1200px;
+		min-height: 429px;
+
+		background-color: $grey;
+	}
+
+	.science-article__wrapper {
+		width: 1200px;
+		background-image: url(../img/24_desktop.png);
+		background-position: left 131px top 17px;	
+	}
+
+	.science-article__desctiption {
+		margin-top: 114px;
+		margin-left: 496px;
+		margin-right: 180px;
+
+		@include font-style (18px, 30px)
 	}
 
 }
