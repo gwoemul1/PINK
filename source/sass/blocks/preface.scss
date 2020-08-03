@@ -1,0 +1,26 @@
+.preface {
+	background-color: $main-color;
+	background-image: url("../img/bg-back-mobile@1x.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	min-height: 462px;
+	min-width: 320px;
+
+	@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+		background-image: url("../img/bg-back-mobile@2x.jpg");
+		background-size: 700px auto;
+	}
+}
+
+.preface__slogan {
+	@include font-style(40px, 46px, 300);
+	text-align: center;	
+	color: $white;
+
+	margin: 0;
+	position: absolute;
+
+	display: none;
+}

@@ -12,43 +12,42 @@
 		
 		<header class="page-header">
 			<div class="page-header__wrapper">
-			<p class="page-header__slogan">Взгляните<br>
-				на жизнь<br>
-				иначе!</p>
-				<div class="page-header__top-line-wrapper">
-					<p class="page-header__slogan">Взгляните<br>
-						на жизнь<br>
-						иначе!</p>
-					<a class="page-header__logo" href="index.html">
-						<img class="page-header__logo-image page-header__logo-image--mobile" src="../img/logotype-white-mobile.png" width="75" height="22" alt="Приложение PINK">
-						<img class="page-header__logo-image page-header__logo-image--tablet" src="../img/logotype-white-tablet.png" width="147" height="40" alt="Приложение PINK">
-						<img class="page-header__logo-image page-header__logo-image--desktop" src="../img/logotype-white-desktop.png" width="147" height="40" alt="Приложение PINK">
-					</a>
-					<nav class="main-nav">					
-						<div class="main-nav__wrapper">
-							<ul class="main-nav__list site-list">
-								<li class="site-list__item site-list__item--active">
-									<a class="site-list__link">Главная</a>
-								</li>
-								<li class="site-list__item">
-									<a class="site-list__link" href="#">Фотографии</a>
-								</li>	
-								<li class="site-list__item">
-									<a class="site-list__link" href="#">Конкурс</a>
-								</li>	
-								<li class="site-list__item">
-									<a class="site-list__link" href="#">HTML Academy</a>
-								</li>							
-							</ul>
-						</div>
-					</nav>
-					<button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-				</div>
-
+				<a class="page-header__logo" href="index.html">
+					<picture>
+						<source media="(min-width: 1200px)" srcset="img/svg/logo-pink-white-desktop.svg">
+						<source media="(min-width: 768px)" srcset="img/svg/logo-pink-white-tablet.svg">
+						<img class="page-header__logo-image" src="img/svg/logo-pink-white-mobile.svg" alt="Приложение PINK">
+					</picture>
+				</a>
+				<nav class="main-nav">
+					<div class="main-nav__wrapper">
+						<ul class="main-nav__list main-nav__list--open site-list">
+							<li class="site-list__item site-list__item--active">
+								<a class="site-list__link">Главная</a>
+							</li>
+							<li class="site-list__item">
+								<a class="site-list__link" href="#">Фотографии</a>
+							</li>	
+							<li class="site-list__item">
+								<a class="site-list__link" href="#">Конкурс</a>
+							</li>	
+							<li class="site-list__item">
+								<a class="site-list__link" href="#">HTML Academy</a>
+							</li>							
+						</ul>
+					</div>
+				</nav>
+				<button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
 			</div>
 		</header>
 
 		<main class="page-main">
+
+			<section class="preface">
+				<p class="preface__slogan">Взгляните<br>
+					на жизнь<br>
+					иначе!</p>
+			</section>
 
 			<section class="download">
 				<div class="download__wrapper">
@@ -79,33 +78,35 @@
 						<p class="features__slogan">Нам есть, что вам<br> предложить!</p>
 					</div>
 				</div>
-				<div class="features__list-wrapper">
-					<ul class="features__list site-list">
-						<li class="features__item">
-							<h3 class="features__title">Поднимает настроение</h3>
-							<p class="features__description">
-								Приложение позволит вам победить
-								осеннюю хандру и депрессию
-								буквально в несколько кликов!
-							</p>
-						</li>
-						<li class="features__item">
-							<h3 class="features__title">Меняет мир вокруг</h3>
-							<p class="features__description">
-								Сделайте снимок и украсьте его
-								смайликом или текстовой подписью,
-								чтобы усилить эффект
-							</p>
-						</li>
-						<li class="features__item">
-							<h3 class="features__title">Заводит новых друзей</h3>
-							<p class="features__description">
-								Ставьте лайки, комментируйте,
-								делитесь фотографиями с друзьями и
-								заводите новых
-							</p>
-						</li>
-					</ul>
+				<div class="features__list-wrapper--triangle">
+					<div class="features__list-wrapper">
+						<ul class="features__list site-list">
+							<li class="features__item">
+								<h3 class="features__title">Поднимает настроение</h3>
+								<p class="features__description">
+									Приложение позволит вам победить
+									осеннюю хандру и депрессию
+									буквально в несколько кликов!
+								</p>
+							</li>
+							<li class="features__item">
+								<h3 class="features__title">Меняет мир вокруг</h3>
+								<p class="features__description">
+									Сделайте снимок и украсьте его
+									смайликом или текстовой подписью,
+									чтобы усилить эффект
+								</p>
+							</li>
+							<li class="features__item">
+								<h3 class="features__title">Заводит новых друзей</h3>
+								<p class="features__description">
+									Ставьте лайки, комментируйте,
+									делитесь фотографиями с друзьями и
+									заводите новых
+								</p>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</section>
 

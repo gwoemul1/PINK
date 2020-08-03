@@ -1,0 +1,100 @@
+.page-header { 
+	width: 100%;
+	position: absolute;
+}
+
+.page-header__wrapper {
+	margin: 0 auto;
+
+	display: flex;
+	justify-content: space-between;
+	min-height: 66px;
+	background-color: transparentize($black,.7);
+}
+
+.page-header__logo-image {
+	margin-top: 22px;
+	margin-left: 20px;
+}
+
+.page-header__toggle {
+	padding: 0;
+	border: none;
+	
+	width: 50px;
+	height: 24px;
+
+	background: url(../img/svg/icon-menu-burger.svg) no-repeat;
+
+	margin-top: 24px;
+	margin-right: 20px;
+
+	cursor: pointer;
+}
+
+@media (min-width: $width-tablet) {
+	.page-header {
+		min-width: 660px;
+		min-height: 730px;
+		background-image: url(../img/iphone-6-tablet.jpg);
+	}
+
+	.page-header__wrapper {
+		min-width: 660px;
+	}
+
+	.page-header__top-line-wrapper {
+		min-height: 110px;
+	}
+
+	.page-header__logo-image {
+		margin-top: 27px;
+		margin-left: 20px;
+	}
+
+	.page-header__toggle {
+		margin-top: 44px;
+	}
+	
+	.page-header__slogan {
+		display: inline;
+		top: 207px;
+		left: 76px;
+	}
+
+}
+
+@media (min-width: $width-desktop) {
+
+	.page-header {
+		min-width: 1200px;
+		min-height: 853px;
+		background-image: url(../img/iphone_6_desktop.jpg);
+	}
+
+	.page-header__wrapper {
+		min-width: 1200px;
+	}
+
+	.page-header__top-line-wrapper {
+		padding: 0 120px;
+	}
+
+	.page-header__logo-image {
+		margin-top: 27px;
+		margin-left: 10px;
+	}
+
+	.page-header__toggle {
+		display: none;
+	}
+
+	.page-header__slogan {
+		display: inline;
+		top: 216px;
+		left: 166px;
+
+		@include font-style (50px, 60px, 300);
+	}
+
+}
