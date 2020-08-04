@@ -1,19 +1,9 @@
 .review {
+	min-width: 320px;
 	min-height: 352px;
-	min-width: $width-mobile;
+
 	display: flex;
 	justify-content: center;
-}
-
-.review__item {
-	margin: 0;
-	display: none;
-
-	&--active {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
 }
 
 .review__wrapper {
@@ -28,14 +18,25 @@
 
 .review__list {
 	margin-top: 49px;
-	margin-bottom: 32px;
+}
+
+.review__item {
+	margin: 0;
+	display: none;
+
+	&--active {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 }
 
 .review__author-name {
 	font-style: normal;
 	@include font-style (18px, 30px, 700);
 	text-align: center;
-	margin-bottom: 20px;
+	
+	margin-bottom: 16px;
 }
 
 .review__author-info {
@@ -45,6 +46,10 @@
 .review__quote {
 	@include font-style (14px, 30px);
 	text-align: center;
+}
+
+.review__toggles {
+	margin-top: 32px;
 }
 
 .review__buttons {

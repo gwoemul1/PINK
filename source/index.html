@@ -11,43 +11,43 @@
 	<body>
 		
 		<header class="page-header">
-			<div class="page-header__wrapper">
-				<a class="page-header__logo" href="index.html">
-					<picture>
-						<source media="(min-width: 1200px)" srcset="img/svg/logo-pink-white-desktop.svg">
-						<source media="(min-width: 768px)" srcset="img/svg/logo-pink-white-tablet.svg">
-						<img class="page-header__logo-image" src="img/svg/logo-pink-white-mobile.svg" alt="Приложение PINK">
-					</picture>
-				</a>
-				<nav class="main-nav">
-					<div class="main-nav__wrapper">
-						<ul class="main-nav__list main-nav__list--open site-list">
-							<li class="site-list__item site-list__item--active">
-								<a class="site-list__link">Главная</a>
-							</li>
-							<li class="site-list__item">
-								<a class="site-list__link" href="#">Фотографии</a>
-							</li>	
-							<li class="site-list__item">
-								<a class="site-list__link" href="#">Конкурс</a>
-							</li>	
-							<li class="site-list__item">
-								<a class="site-list__link" href="#">HTML Academy</a>
-							</li>							
-						</ul>
-					</div>
-				</nav>
-				<button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-			</div>
+
+			<nav class="main-nav">
+				<div class="main-nav__wrapper">
+					<a class="main-nav__logo" href="index.html">
+						<picture>
+							<source media="(min-width: 1200px)" srcset="img/svg/logo-pink-white-desktop.svg">
+							<source media="(min-width: 768px)" srcset="img/svg/logo-pink-white-tablet.svg">
+							<img class="main-nav__logo-image" src="img/svg/logo-pink-white-mobile.svg" alt="Приложение PINK">
+						</picture>
+					</a>
+					<button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+				</div>
+				<ul class="main-nav__list site-list">
+					<li class="main-nav__list__item main-nav__list__item--active">
+						<a class="main-nav__list__link">Главная</a>
+					</li>
+					<li class="main-nav__list__item">
+						<a class="main-nav__list__link" href="#">Фотографии</a>
+					</li>	
+					<li class="main-nav__list__item">
+						<a class="main-nav__list__link" href="#">Конкурс</a>
+					</li>	
+					<li class="main-nav__list__item">
+						<a class="main-nav__list__link" href="#">HTML Academy</a>
+					</li>
+				</ul>
+			</nav>
+
+			<p class="page-header__slogan">
+				Взгляните<br>
+				на жизнь<br>
+				иначе!
+			</p>
+
 		</header>
 
 		<main class="page-main">
-
-			<section class="preface">
-				<p class="preface__slogan">Взгляните<br>
-					на жизнь<br>
-					иначе!</p>
-			</section>
 
 			<section class="download">
 				<div class="download__wrapper">
@@ -72,14 +72,16 @@
 			</section>
 
 			<section class="features">
-				<div class="features__background-wrapper">
+
+				<div class="features__top-wrapper">
 					<div class="features__slogan-wrapper">
 						<p class="features__slogan">Устали от серости мегаполиса?</p>
 						<p class="features__slogan">Нам есть, что вам<br> предложить!</p>
 					</div>
 				</div>
-				<div class="features__list-wrapper--triangle">
-					<div class="features__list-wrapper">
+
+				<div class="features__bottom-wrapper--triangle">
+					<div class="features__bottom-wrapper">
 						<ul class="features__list site-list">
 							<li class="features__item">
 								<h3 class="features__title">Поднимает настроение</h3>
@@ -108,6 +110,7 @@
 						</ul>
 					</div>
 				</div>
+
 			</section>
 
 			<article class="science-article">
@@ -304,7 +307,7 @@
 			</section>
 
 			<section class="map">
-				<div class="map__wrapper"></div>
+				<div class="map__wrapper"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1998.6037872533238!2d30.32085871668049!3d59.938716481876206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1596558906672!5m2!1sru!2sru" width="100%" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
 			</section>
 
 			<section class="bottomline">

@@ -1,5 +1,7 @@
 .feedback {
 	min-width: 320px;
+	min-height: 412px;
+
 	display: flex;
 	justify-content: center;
 }
@@ -13,19 +15,21 @@
 	margin: 0 auto;
 }
 
+.feedback__title {
+	@include font-style (24px, 30px, 300);
+	color: $main-color;
+	text-align: center;
+
+	margin-top: 40px;
+	margin-bottom: 0;
+}
+
 .feedback__item {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin-bottom: 28px;
-}
 
-.feedback__title {
-	@include font-style (24px, 30px, 300);
-	color: $main-color;
-	margin-top: 48px;
-
-	text-align: center;
+	margin-top: 28px;
 }
 
 .feedback__list-title {

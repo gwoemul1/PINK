@@ -1,20 +1,24 @@
-.tariff::before {
-  content: '';
-  display: block;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 32px 320px 0 0;
-	border-color: $white $grey transparent transparent;
+.tariff {
+	min-width: 320px;
+	height: 469px;
+
+	position: relative;
+
+	background-color: $grey;
 }
 
-.tariff {
-	min-width: $width-mobile;
-	height: 477px;
-
-	margin: 0 auto;
-	
-	background-color: $grey;
+.tariff::before {
+	content: '';
+	position: absolute;
+	top: 0;
+  width: 100%;
+	height: 100%;
+	background-image: url(../img/svg/bg-triangle-white.svg);
+	background-repeat: no-repeat;
+	background-position-x: center;
+	background-position-y: top;
+	background-size: 100% 31px;
+	z-index: 0;
 }
 
 .tariff__wrapper {
@@ -23,14 +27,15 @@ flex-direction: column;
 align-items: center;
 
 width: 320px;
+
 padding: 0 20px;
 margin: 0 auto;
 }
 
 .tariff__table {
-	margin-top: 66px;
-	margin-bottom: 41px;
 	border-collapse: collapse;
+
+	margin-top: 91px;
 }
 
 .tariff__table--tablet {
@@ -89,6 +94,10 @@ margin: 0 auto;
 		background-repeat: no-repeat;
 		background-position-x: 228px;
 	}
+}
+
+.tariff__toggles {
+	margin-top: 41px;
 }
 
 @media (min-width: $width-tablet) {

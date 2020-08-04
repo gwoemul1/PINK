@@ -1,35 +1,50 @@
 .page-header { 
-	width: 100%;
-	position: absolute;
+	position: relative;
+	min-width: 320px;
+	min-height: 462px;
+
+	background-color: $main-color;
+	background-image: url("../img/bg-back-mobile@1x.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	min-height: 462px;
+	min-width: 320px;
+
+	@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+		background-image: url("../img/bg-back-mobile@2x.jpg");
+		background-size: 700px auto;
+	}
+
 }
 
-.page-header__wrapper {
+.page-header::after {
+	content: "";
+	display: block;
+	width: 320px;
+	height: 462px;
+	background-image: url("../img/iphone-hand-mobile@1x.png");
+	background-repeat: no-repeat;
+	background-position-y: bottom;
 	margin: 0 auto;
 
-	display: flex;
-	justify-content: space-between;
-	min-height: 66px;
-	background-color: transparentize($black,.7);
+	@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+		background-image: url("../img/iphone-hand-mobile@2x.png");
+		background-size: 258px auto;
+	}
+
 }
 
-.page-header__logo-image {
-	margin-top: 22px;
-	margin-left: 20px;
-}
+.page-header__slogan {
+	@include font-style(40px, 46px, 300);
+	text-align: center;	
+	color: $white;
 
-.page-header__toggle {
-	padding: 0;
-	border: none;
-	
-	width: 50px;
-	height: 24px;
+	margin: 0;
+	position: absolute;
 
-	background: url(../img/svg/icon-menu-burger.svg) no-repeat;
-
-	margin-top: 24px;
-	margin-right: 20px;
-
-	cursor: pointer;
+	display: none;
 }
 
 @media (min-width: $width-tablet) {

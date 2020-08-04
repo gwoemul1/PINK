@@ -1,9 +1,6 @@
 .page-footer {
-	min-width: $width-mobile;
-}
-
-.page-footer {
-	margin: 0 auto;
+	min-width: 320px;
+	min-height: 612px;
 }
 
 @media (min-width: $width-tablet) {

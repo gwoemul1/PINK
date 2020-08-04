@@ -1,26 +1,29 @@
-.preface {
-	background-color: $main-color;
-	background-image: url("../img/bg-back-mobile@1x.jpg");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+// .preface {
+// 	background-color: $main-color;
+// 	background-image: url("../img/bg-back-mobile@1x.jpg");
+// 	background-position: center;
+// 	background-repeat: no-repeat;
+// 	background-size: cover;
 
-	min-height: 462px;
-	min-width: 320px;
+// 	min-height: 462px;
+// 	min-width: 320px;
 
-	@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-		background-image: url("../img/bg-back-mobile@2x.jpg");
-		background-size: 700px auto;
-	}
-}
+// 	@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+// 		background-image: url("../img/bg-back-mobile@2x.jpg");
+// 		background-size: 700px auto;
+// 	}
+// }
 
-.preface__slogan {
-	@include font-style(40px, 46px, 300);
-	text-align: center;	
-	color: $white;
+// .preface::after {
+// 	content: "";
+// 	display: block;
+// 	position: relative;
+// 	width: 258px;
+// 	height: 286px;
+// 	background-image: url("../img/iphone-hand-mobile@1x.png");
+// 	background-repeat: no-repeat;
+// 	background-position: left bottom;
+// 	margin-left: auto;
+// 	margin-right: auto;
+// }
 
-	margin: 0;
-	position: absolute;
-
-	display: none;
-}

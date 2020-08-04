@@ -1,7 +1,5 @@
 .features {
-	min-width: $width-mobile;
-
-	margin: 0 auto;
+	min-width: 320px;
 
 	display: flex;
 	flex-direction: column;
@@ -9,61 +7,87 @@
 	background-color: $grey;
 }
 
-.features__background-wrapper {
+.features__top-wrapper {
 	background-color: $white;
 }
 
 .features__slogan-wrapper {
 	height: 217px;
 	width: 320px;
+
+	display: flex;
+	flex-direction: column;
+	
 	padding: 0 20px;
 	margin: 0 auto;
 }
 
-.features__list-wrapper {
-	width: 320px;
-	height: 755px;
-	padding: 0 20px;
-	margin: 0 auto;
-
-	background-image: url(../img/iphone_screen.png);
-	background-repeat: no-repeat;
-	background-position: bottom -42px right 50%;
-}
-
-.features__list-wrapper--triangle {
+.features__bottom-wrapper--triangle {
 	position: relative;
 }
 
-.features__list-wrapper--triangle::before {
+.features__bottom-wrapper--triangle::before {
 	content: '';
 	position: absolute;
 	top: 0;
   width: 100%;
 	height: 100%;
-	background-image: url(../img/bg-triangle-white.svg);
+	background-image: url(../img/svg/bg-triangle-white.svg);
 	background-repeat: no-repeat;
 	background-position-x: center;
 	background-position-y: top;
-	background-size: 100% 90px;
+	background-size: 100% 31px;
 	z-index: 0;
 }
 
-.features__slogan {
+.features__bottom-wrapper {
+	width: 320px;
+	height: 785px;
+	padding: 0 20px;
+	margin: 0 auto;
+
+	display: flex;
+
+	background-image: url("../img/iphone-screen-mobile@1x.png");
+	background-repeat: no-repeat;
+	background-position: bottom -42px right 50%;
+
+	@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+		background-image: url("../img/iphone-screen-mobile@2x.png");
+		background-size: 157px auto;
+	}
+}
+
+.features__slogan {	
 	@include font-style(24px, 30px, 300);
 	text-align: center;
+
+	margin-top: 0;
+	margin-bottom: 30px;	
+}
+
+.features__slogan:nth-child(1) {
+	margin-top: 40px;
+}
+
+.features__list {
+	margin-top: 80px;
 }
 
 .features__item {
 	text-align: center;
+	margin-bottom: 40px;	
 }
 
 .features__title {
 	@include font-style(18px, 16px, 700);
+	margin-top: 0;
+	margin-bottom: 14px;
 }
 
 .features__description {
 	@include font-style(14px, 24px, 400);
+	margin: 0;
 }
 
 @media (min-width: $width-tablet) {
