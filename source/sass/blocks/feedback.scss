@@ -32,6 +32,10 @@
 	margin-top: 28px;
 }
 
+.feedback__item:last-child {
+	margin-bottom: 0;
+}
+
 .feedback__list-title {
 	@include font-style (18px, 30px, 700);
 	color: $main-color;	
@@ -41,10 +45,6 @@
 	@include font-style (24px, auto, 300);
 	color: #d22856;
 	text-align: center;
-}
-
-.feedback__item:last-child {
-	margin-bottom: 0;
 }
 
 @media (min-width: $width-tablet) {
@@ -68,7 +68,7 @@
 	}
 
 	.feedback__item {
-		margin-bottom: 40px;	
+		margin-top: 40px;
 	}
 
 }

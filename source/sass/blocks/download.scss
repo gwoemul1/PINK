@@ -46,19 +46,19 @@
 	display: block;
 
 	&--appstore {
-		background-image: url(../img/svg/logo-apple.svg);
+		background-image: url("../img/svg/logo-apple.svg");
 		width: 46px;
 		height: 56px;
 	}
 	
 	&--play-market {
-		background-image: url(../img/svg/logo-android.svg);
+		background-image: url("../img/svg/logo-android.svg");
 		width: 42px;
 		height: 47px;
 	}
 	
 	&--microsoft-store {
-		background-image: url(../img/svg/logo-microsoft.svg);
+		background-image: url("../img/svg/logo-microsoft.svg");
 		width: 43px;
 		height: 41px;
 	}
@@ -74,24 +74,30 @@
 @media (min-width: $width-tablet) {
 
 	.download {
-		width: 660px;
+		width: 620px;
+		min-height: 352px;
+
+		margin: 0 auto;
+
 		background-color: transparent;
-		min-height: 353px;
+
+		position: relative;
+		z-index: 1;
 	}	
+
+	.download__wrapper {
+		width: 300px;
+		min-height: 242px;
+
+		padding: 0;
+
+		margin-top: -352px;
+		margin-left: 0;
+	}
 
 	.download__button {
 		width: 300px;
 		margin: 0;
-	}
-
-	.download__wrapper {
-		width: 300px;
-		padding: 0;
-
-		margin-top: -352px;
-		margin-left: 20px;
-
-		min-height: 237px;
 	}
 
 	.download__discription {
@@ -103,15 +109,14 @@
 @media (min-width: $width-desktop) {
 
 	.download {
-		width: 1200px;
+		width: 940px;
 		min-height: 403px;
-		padding: 0 120px;
+
 	}	
 
 	.download__wrapper {
 		margin-top: -403px;
-		margin-left: 20px;
 
-		min-height: 276px;
+		min-height: 285px;
 	}
 }

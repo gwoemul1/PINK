@@ -60,10 +60,15 @@
 
 	.review {
 		min-width: 660px;
+		min-height: 287px;
 	}
 
 	.review__wrapper {
 		width: 660px;
+	}
+
+	.review__list {
+		margin-top: 38px;
 	}
 
 	.review__author-name {
@@ -89,6 +94,7 @@
 
 	.review {
 		min-width: 1200px;
+		min-height: 415px;
 	}
 
 	.review__wrapper {
@@ -98,7 +104,7 @@
 		padding: 0 10px;
 		margin: 0 120px;
 
-		background-image: url(../img/quotes.png);
+		background-image: url("../img/svg/icon-quotes.svg");
 		background-repeat: no-repeat;
 		background-position: left 50% top 72px;
 	}
@@ -128,12 +134,12 @@
 	}
 
 	.review__prev {
-		background: url(../img/left-arrow.png) no-repeat;
+		background: url("../img/svg/icon-review-arrow-left.svg") no-repeat;
 		left: 0;
 	}
 
 	.review__next {
-		background: url(../img/right-arrow.png) no-repeat;
+		background: url("../img/svg/icon-review-arrow-right.svg") no-repeat;
 		right: 0;
 	}
 

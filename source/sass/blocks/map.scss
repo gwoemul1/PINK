@@ -1,16 +1,14 @@
 .map {
 
 	min-width: 320px;
-	height: 200px;
-
-	// background-image: url(../img/bg-map-mobile@1x.png);
-	// background-repeat: no-repeat;
-	// background-position: bottom;
+	min-height: 200px;
 }
 
 .map__wrapper {
 	position: relative;
-	// width: 320px;
+
+	height: 200px;
+
 	margin: 0 auto;
 }
 
@@ -32,16 +30,16 @@
 
 	.map {
 		min-width: 660px;
-		height: 305px;
-		background-image: url(../img/map_tablet.jpg);
+		height: 374px;
 	}
 
 	.map__wrapper {
-		width: 660px;
+		height: 374px;
 	}
 
 	.map__wrapper::before {
-		border-width: 68px 330px 0 330px;
+		height: 68px;
+		background-size: 100% 68px;
 	}
 
 }
