@@ -1,0 +1,304 @@
+.name-form {
+	min-width: 320px;
+	min-height: 529px;
+}
+
+.name-form__wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	width: 320px;
+
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.name-form__description {
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 40px;
+}
+
+.name-form__description--tablet {
+	display: none;	
+}
+
+.text-form__item {
+	margin-bottom: 20px;
+}
+
+.text-form__label {
+	display: block;
+	color: $pink;
+	text-transform: uppercase;
+	margin-left: 24px;
+	margin-bottom: 10px;
+}
+
+.text-form__input {
+	width: 280px;
+	height: 63px;
+
+	border: 2px solid $grey;
+}
+
+.text-form__input::placeholder {
+	@include font-style (18px, 30px);
+	padding-left: 20px;
+	color: $main-color;
+}
+
+.achievements-form {
+	min-width: 320px;
+	min-height: 604px;
+	background-color: $grey;
+}
+
+.achievements-form__wrapper {
+	display: flex;
+	flex-direction: column;
+
+	width: 320px;
+
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.form__description {
+	color: $pink;
+	text-transform: uppercase;
+	text-align: center;
+
+	margin-top: 36px;
+}
+
+.achievements-form__list {
+	margin-top: 26px;
+}
+
+.check-form__item {
+	margin-bottom: 55px;
+}
+
+
+.check-form__label {
+	@include font-style (18px, 30px);
+	padding-left: 70px;
+}
+
+.check-form__input {
+	position: absolute;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.check-form__input-custom {
+	position: absolute;
+	margin-left: -70px;
+
+	width: 39px;
+	height: 39px;
+
+	background-color: $white;
+
+	border: 2px solid $dark-grey;
+	border-radius: 1;
+}
+
+.achievements-form__checkbox:checked + .achievements-form__checkbox-custom {
+	background-image: url("../img/svg/icon-check.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.contacts-form {
+	min-width: 320px;
+	min-height: 287px;
+}
+
+.contacts-form__wrapper {
+	display: flex;
+	flex-direction: column;
+
+	width: 320px;
+
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.contacts-form__list {
+	margin-top: 30px;
+}
+
+.OS-form {
+	min-width: 320px;
+	min-height: 340px;
+
+	background-color: $grey;
+}
+
+.OS-form__wrapper {
+	display: flex;
+	flex-direction: column;
+
+	width: 320px;
+
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.OS-form__checkbox-custom {
+	border-radius: 25px;
+}
+
+.OS-form__checkbox:checked + .OS-form__checkbox-custom::after {
+	content: "";
+  display: block;
+	position: absolute;
+	top: 10px;
+  left: 10px;
+  width: 15px;
+  height: 15px;
+  background-color: $pink;
+  border-radius: 50%;
+}
+
+.story-form {
+	min-width: 320px;
+	min-height: 295px;
+}
+
+.story-form__wrapper {
+	display: flex;
+	flex-direction: column;
+	
+	width: 320px;
+
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.story-form__input {
+	min-width: 280px;
+	min-height: 197px;
+	resize: none;
+}
+
+.submit-form {
+	min-width: 320px;
+}
+
+.submit-form__wrapper {
+	min-height: 185px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	
+	width: 320px;
+
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.submit-form__button {
+	width: 280px;
+	height: 63px;
+
+	background-color: #2aab6d;
+
+	border: none;
+	border-radius: 3px;
+
+	@include font-style (18px, 30px, 700);
+	text-transform: uppercase;
+	color: $white;
+}
+
+.submit-form__legend {
+	text-transform: uppercase;
+}
+
+.submit-form__legend sup {
+	color: $pink;
+}
+
+@media (min-width: $width-tablet) {
+
+	.contest-form {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.name-form {
+		min-width: 660px;
+		order: -3;
+	}
+
+	.name-form__wrapper {
+		width: 660px;
+	}
+	
+	.name-form__description {
+		width: 500px;
+
+		@include font-style (18px, 30px);
+
+		&--tablet {
+			display: inline;
+		}
+	}
+
+	.name-form__list {
+		width: 100%;
+	}
+
+	.name-form__label {
+		display: inline;
+		margin: 0;
+		margin-right: 20px;
+	}
+
+	.name-form__item {
+		display: flex;
+		align-items: center;
+	}
+
+	.name-form__input {
+		flex-grow: 1;
+	}
+
+}
+
+.OS-form {
+	min-width: 660px;
+
+	background-color: $white;
+
+	order: -2;
+}
+
+.OS-form__wrapper {
+	position: relative;
+	width: 660px;
+
+	border: 2px solid $grey;
+}
+
+.OS-form__description {
+	position: absolute;
+	margin: 0;
+	padding: 0 20px;
+	top: -10px;
+
+	background-color: $white;
+}
+
+.contacts-form {
+	order: -1;
+}
+
+

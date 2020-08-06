@@ -88,7 +88,11 @@
 	}
 
 	.science-article__title br {
-		display: none;
+    content: ' ';
+	}
+
+	.science-article__title br:after {
+    content: ' ';
 	}
 
 	.science-article__description {

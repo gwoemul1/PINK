@@ -48,16 +48,16 @@
 
 	.map {
 		min-width: 1200px;
-		height: 400px;
-		background-image: url(../img/map_display.jpg);
+		height: 502px;
 	}
 
 	.map__wrapper {
-		width: 1200px;
+		height: 502px;
 	}
 
 	.map__wrapper::before {
-		border-width: 103px 600px 0 600px;
+		height: 103px;
+		background-size: 100% 103px;
 	}
 
 }
