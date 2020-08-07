@@ -144,6 +144,11 @@
 			background-image: url("../img/bg-back-desktop@2x.jpg");
 			background-size: 2560px auto;
 		}
+		
+		&--inner {
+			min-height: 394px;
+			background-size: 2560px;
+		}
 
 	}
 
@@ -170,6 +175,18 @@
 
 		top: 220px;
 		left: 44px;
+	}
+
+	.page-header__title-wrapper {
+		width: 960px;
+
+		padding: 0 10px;
+	}
+
+	.page-header__title {
+		@include font-style (50px, 60px, 300);
+		
+		margin-top: 180px;
 	}
 
 }

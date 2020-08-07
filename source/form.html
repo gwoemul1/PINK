@@ -27,7 +27,7 @@
 					
 					<ul class="main-nav__list site-list">
 						<li class="main-nav__list__item">
-							<a class="main-nav__list__link" href="#">Главная</a>
+							<a class="main-nav__list__link" href="index.html">Главная</a>
 						</li>
 						<li class="main-nav__list__item">
 							<a class="main-nav__list__link" href="#">Фотографии</a>
@@ -52,135 +52,146 @@
 			
 			<form class="contest-form" method="get" action="https://echo.htmlacademy.ru">
 
-				<div class="name-form">
-					<div class="name-form__wrapper">
-						<p class="name-form__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<span class="name-form__description--tablet">Пожалуйста, заполните форму ниже:</span></p> 
-						
-						<ul class="name-form__list site-list text-form">
-							<li class="name-form__item text-form__item">
-								<label class="name-form__label text-form__label" for="last-name">Фамилия:</label>
-								<input class="name-form__input text-form__input" type="text" id="last-name" placeholder="Укажите фамилию *" required>
-							</li>
-							<li class="name-form__item text-form__item">
-								<label class="name-form__label text-form__label" for="first-name">Имя:</label>
-								<input class="name-form__input text-form__input" type="text" id="first-name" placeholder="Введите ваше имя *" required>
-							</li>
-							<li class="name-form__item text-form__item">
-								<label class="name-form__label text-form__label" for="second-name">Фамилия:</label>
-								<input class="name-form__input text-form__input" type="text" id="second-name" placeholder="Ну и отчество тоже">
-							</li>
-						</ul>
+				<div class="contest-form__wrapper">
+
+					<div class="contest-form__intro">
+						<p class="contest-form__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="contest-form__description--tablet">Пожалуйста, заполните форму ниже:</span></p> 
+					</div>
+
+					<div class="name-form">
+						<div class="name-form__wrapper">
+							<ul class="name-form__list site-list text-form">
+								<li class="name-form__item text-form__item">
+									<label class="name-form__label text-form__label" for="last-name">Фамилия:</label>
+									<input class="name-form__input text-form__input" type="text" id="last-name" placeholder="Укажите фамилию *" required>
+								</li>
+								<li class="name-form__item text-form__item">
+									<label class="name-form__label text-form__label" for="first-name">Имя:</label>
+									<input class="name-form__input text-form__input" type="text" id="first-name" placeholder="Введите ваше имя *" required>
+								</li>
+								<li class="name-form__item text-form__item">
+									<label class="name-form__label text-form__label" for="second-name">Фамилия:</label>
+									<input class="name-form__input text-form__input" type="text" id="second-name" placeholder="Ну и отчество тоже">
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="achievements-form">
+						<div class="achievements-form__wrapper tablet-form__wrapper">
+							<p class="achievements-form__description form__description">Ваши безбашенные<br> достижения в путешествии</p>
+							<ul class="achievements-form__list site-list">
+								<li class="achievements-form__item check-form__item">
+									<label class="achievements-form__label check-form__label">
+									<input class="achievements-form__checkbox check-form__input" type="checkbox" checked>
+									<span class="achievements-form__checkbox-custom check-form__input-custom"></span>
+									Сделал селфи с акулой
+									</label>
+								</li>
+								<li class="achievements-form__item check-form__item">
+									<label class="achievements-form__label check-form__label">
+									<input class="achievements-form__checkbox check-form__input" type="checkbox" checked>
+									<span class="achievements-form__checkbox-custom check-form__input-custom"></span>
+									Обгорел на пляже
+									</label>
+								</li>
+								<li class="achievements-form__item check-form__item">
+									<label class="achievements-form__label check-form__label">
+									<input class="achievements-form__checkbox check-form__input" type="checkbox">
+									<span class="achievements-form__checkbox-custom check-form__input-custom"></span>
+									Видел Чака Норриса
+									</label>
+								</li>
+								<li class="achievements-form__item check-form__item">
+									<label class="achievements-form__label check-form__label">
+									<input class="achievements-form__checkbox check-form__input" type="checkbox">
+									<span class="achievements-form__checkbox-custom check-form__input-custom"></span>
+									Накупил сувениров
+									</label>
+								</li>
+								<li class="achievements-form__item check-form__item">
+									<label class="achievements-form__label check-form__label">
+									<input class="achievements-form__checkbox check-form__input" type="checkbox" checked>
+									<span class="achievements-form__checkbox-custom check-form__input-custom"></span>
+									Удержал башню
+									</label>
+								</li>
+								<li class="achievements-form__item check-form__item">
+									<label class="achievements-form__label check-form__label">
+									<input class="achievements-form__checkbox check-form__input" type="checkbox">
+									<span class="achievements-form__checkbox-custom check-form__input-custom"></span>
+									Разгромил отель
+									</label>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="contacts-form">
+						<div class="contacts-form__wrapper tablet-form__wrapper">
+							<p class="contacts-form__description form__description">Контактная информация</p>
+							<ul class="contacts-form__list site-list text-form">
+								<li class="contacts-form__item text-form__item">
+									<label class="contacts-form__label text-form__label" for="telephone">Номер телефона</label>
+									<div class="contacts-form__input-wrapper contacts-form__input-wrapper--phone">
+										<input class="contacts-form__input text-form__input" type="tel" id="telephone" placeholder="Номер, пожалуйста">
+									</div>
+								</li>
+								<li class="contacts-form__item text-form__item">
+									<label class="contacts-form__label text-form__label" for="email">Адрес почты</label>
+									<div class="contacts-form__input-wrapper contacts-form__input-wrapper--mail">
+										<input class="contacts-form__input text-form__input" type="email" id="email" placeholder="Введите почту *" required>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="OS-form">
+						<div class="OS-form__wrapper tablet-form__wrapper">
+							<p class="OS-form__description form__description">С каким приложением путешествовали?</p>
+							<ul class="OS-form__list site-list">
+								<li class="OS-form__item check-form__item">
+									<label class="OS-form__label check-form__label">
+									<input class="OS-form__checkbox check-form__input" type="radio" name="OS" checked>
+									<span class="OS-form__checkbox-custom check-form__input-custom"></span>
+									Pink для iOS
+									</label>
+								</li>
+								<li class="OS-form__item check-form__item">
+									<label class="OS-form__label check-form__label">
+									<input class="OS-form__checkbox check-form__input" type="radio" name="OS">
+									<span class="OS-form__checkbox-custom check-form__input-custom"></span>
+									Pink на Android
+									</label>
+								</li>
+								<li class="OS-form__item check-form__item">
+									<label class="OS-form__label check-form__label">
+									<input class="OS-form__checkbox check-form__input" type="radio" name="OS">
+									<span class="OS-form__checkbox-custom check-form__input-custom"></span>
+									Windows Phone
+									</label>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="story-form">
+						<div class="story-form__wrapper tablet-form__wrapper">
+							<p class="story-form__discription form__description">Опишите свои эмоции</p>
+							<textarea class="story-form__input text-form__input" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+						</div>
+					</div>
+
+					<div class="submit-form">
+						<div class="submit-form__wrapper">
+							<button class="submit-form__button" type="submit">Отправить форму</button>
+
+							<p class="submit-form__legend"><sup>*</sup> — обязательные поля</p>
+						</div>
 					</div>
 				</div>
 
-				<div class="achievements-form">
-					<div class="achievements-form__wrapper">
-						<p class="achievements-form__description form__description">Ваши безбашенные<br> достижения в путешествии</p>
-						<ul class="achievements-form__list site-list">
-							<li class="achievements-form__item check-form__item">
-								<label class="achievements-form__label check-form__label">
-								<input class="achievements-form__checkbox check-form__input" type="checkbox" checked>
-								<span class="achievements-form__checkbox-custom check-form__input-custom"></span>
-								Сделал селфи с акулой
-								</label>
-							</li>
-							<li class="achievements-form__item check-form__item">
-								<label class="achievements-form__label check-form__label">
-								<input class="achievements-form__checkbox check-form__input" type="checkbox" checked>
-								<span class="achievements-form__checkbox-custom check-form__input-custom"></span>
-								Обгорел на пляже
-								</label>
-							</li>
-							<li class="achievements-form__item check-form__item">
-								<label class="achievements-form__label check-form__label">
-								<input class="achievements-form__checkbox check-form__input" type="checkbox">
-								<span class="achievements-form__checkbox-custom check-form__input-custom"></span>
-								Видел Чака Норриса
-								</label>
-							</li>
-							<li class="achievements-form__item check-form__item">
-								<label class="achievements-form__label check-form__label">
-								<input class="achievements-form__checkbox check-form__input" type="checkbox">
-								<span class="achievements-form__checkbox-custom check-form__input-custom"></span>
-								Накупил сувениров
-								</label>
-							</li>
-							<li class="achievements-form__item check-form__item">
-								<label class="achievements-form__label check-form__label">
-								<input class="achievements-form__checkbox check-form__input" type="checkbox" checked>
-								<span class="achievements-form__checkbox-custom check-form__input-custom"></span>
-								Удержал башню
-								</label>
-							</li>
-							<li class="achievements-form__item check-form__item">
-								<label class="achievements-form__label check-form__label">
-								<input class="achievements-form__checkbox check-form__input" type="checkbox">
-								<span class="achievements-form__checkbox-custom check-form__input-custom"></span>
-								Разгромил отель
-								</label>
-							</li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="contacts-form">
-					<div class="contacts-form__wrapper">
-						<ul class="contacts-form__list site-list text-form">
-							<li class="contacts-form__item text-form__item">
-								<label class="contacts-form__label text-form__label" for="telephone">Номер телефона:</label>
-								<input class="contacts-form__input text-form__input" type="tel" id="telephone" placeholder="Номер, пожалуйста">
-							</li>
-							<li class="contacts-form__item">
-								<label class="contacts-form__label text-form__label" for="email">Имя:</label>
-								<input class="contacts-form__input text-form__input" type="email" id="email" placeholder="Введите почту *" required>
-							</li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="OS-form">
-					<div class="OS-form__wrapper">
-						<p class="OS-form__description form__description">С каким приложением путешествовали?</p>
-						<ul class="OS-form__list site-list">
-							<li class="OS-form__item check-form__item">
-								<label class="OS-form__label check-form__label">
-								<input class="OS-form__checkbox check-form__input" type="radio" name="OS" checked>
-								<span class="OS-form__checkbox-custom check-form__input-custom"></span>
-								Pink для iOS
-								</label>
-							</li>
-							<li class="OS-form__item check-form__item">
-								<label class="OS-form__label check-form__label">
-								<input class="OS-form__checkbox check-form__input" type="radio" name="OS">
-								<span class="OS-form__checkbox-custom check-form__input-custom"></span>
-								Pink на Android
-								</label>
-							</li>
-							<li class="OS-form__item check-form__item">
-								<label class="OS-form__label check-form__label">
-								<input class="OS-form__checkbox check-form__input" type="radio" name="OS">
-								<span class="OS-form__checkbox-custom check-form__input-custom"></span>
-								Windows Phone
-								</label>
-							</li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="story-form">
-					<div class="story-form__wrapper">
-						<p class="story-form__discription form__description">Опишите свои эмоции</p>
-						<textarea class="story-form__input text-form__input" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-					</div>
-				</div>
-
-				<div class="submit-form">
-					<div class="submit-form__wrapper">
-						<button class="submit-form__button" type="submit">Отправить форму</button>
-
-						<p class="submit-form__legend"><sup>*</sup> — обязательные поля</p>
-					</div>
-				</div>
 			</form>
 
 		</main>
@@ -241,6 +252,8 @@
 			</section>
 	
 		</footer>
+
+		<script type="text/javascript" src="js/script.js"></script>
 
 	</body>
 </html>
