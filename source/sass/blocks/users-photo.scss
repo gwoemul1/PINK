@@ -1,0 +1,117 @@
+.users-photo {
+	min-width: 320px;
+
+	&__wrapper {
+		width: 320px;
+
+		margin: 0 auto;
+		padding: 0 20px;
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+.users-photo__description {
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 40px;
+}
+
+.users-photo__item:first-child {
+	width: 320px;
+}
+
+.users-photo__item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	margin-bottom: 20px;
+}
+
+.users-photo__comment {
+	width: 280px;
+
+	padding: 18px;
+
+	background-color: $grey;
+}
+
+.users-photo__comment-item {
+	margin: 0;
+	padding: 0;
+}
+
+.users-photo__author-name {
+	font-weight: 700;
+	font-style: normal;
+}
+
+.users-photo__time {
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+.users-photo__quote {
+	margin: 0;
+	padding: 0;
+}
+
+.users-photo__likes {
+	position: relative;
+
+	margin: 10px 32px 0;
+
+	text-transform: uppercase;
+	font-size: 12px;
+	color: $pink;
+	
+	&::after {
+		content: "";
+		display: block;
+		position: absolute;
+
+		width: 13px;
+		height: 12px;
+		top: 5px;
+		left: -32px;
+		background-image: url("../img/svg/icon-heart.svg");
+	}
+}
+
+.users-photo__slogan {
+	display: block;
+	text-align: center;
+
+	margin: 20px 0;
+}
+
+.photo-submit {
+	min-width: 320px;
+
+	background-color: $grey;
+
+	&__wrapper {
+		width: 320px;
+
+		margin: 0 auto;
+		padding: 0 20px;
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+.photo-submit__image {
+	margin-top: 20px;
+}
+
+.photo-submit__buttons {
+	display: flex;
+	justify-content: space-between;
+
+	width: 198px;
+}

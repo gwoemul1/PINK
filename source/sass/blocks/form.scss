@@ -242,11 +242,17 @@
 
 .submit-form__legend {
 	text-transform: uppercase;
+
+	&--desktop {
+		display: none;
+	}
 }
 
 .submit-form__legend sup {
 	color: $pink;
 }
+
+
 
 @media (min-width: $width-tablet) {
 
@@ -438,6 +444,7 @@
 
 			flex-direction: row;
 			flex-wrap: wrap;
+			justify-content: space-between;
 
 			padding: 0 10px;
 			margin: 0 auto;
@@ -445,32 +452,33 @@
 	}
 
 	.contest-form__intro {
-		width: 960px;
+		width: 940px;
 		padding: 0 100px;
 	}
 
 	.name-form {
-		min-width: 470px;
+		min-width: 435px;
 
 		&__wrapper {
-			width: 470px;
+			width: 435px;
+			padding: 0;
 		}
 	}
 
 	.OS-form {
-		min-width: 470px;
+		min-width: 435px;
 
 		&__wrapper {
-			width: 470px;
+			width: 435px;			
 		}
 	}
 
 	.contacts-form {
-		min-width: 960px;
+		min-width: 940px;
 		min-height: 200px;
 
 		&__wrapper {
-			width: 960px;
+			width: 940px;
 			padding: 0 10px;
 		}
 	}
@@ -485,11 +493,11 @@
 	}
 
 	.achievements-form {
-		min-width: 960px;
+		min-width: 940px;
 		min-height: 290px;
 
 		&__wrapper {
-			width: 960px;
+			width: 940px;
 		}
 	}
 
@@ -512,19 +520,23 @@
 	}
 
 	.story-form {
-		min-width: 960px;
+		min-width: 940px;
 
 		&__wrapper {
-			width: 960px;
+			width: 940px;
 		}
 	}
 
 	.submit-form {
-		min-width: 960px;
+		min-width: 940px;
 
 		&__wrapper {
-			width: 960px;
+			width: 940px;
 		}
+	}
+
+	.submit-form__legend--desktop {
+		display: inline;
 	}
 
 }
