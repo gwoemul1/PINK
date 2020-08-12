@@ -29,11 +29,11 @@
 						<li class="main-nav__list__item">
 							<a class="main-nav__list__link" href="index.html">Главная</a>
 						</li>
-						<li class="main-nav__list__item">
-							<a class="main-nav__list__link" href="#">Фотографии</a>
-						</li>	
 						<li class="main-nav__list__item main-nav__list__item--active">
-							<a class="main-nav__list__link">Конкурс</a>
+							<a class="main-nav__list__link">Фотографии</a>
+						</li>	
+						<li class="main-nav__list__item">
+							<a class="main-nav__list__link" href="form.html">Конкурс</a>
 						</li>	
 						<li class="main-nav__list__item">
 							<a class="main-nav__list__link" href="#">HTML Academy</a>
@@ -53,19 +53,29 @@
 			<section class="users-photo">
 				<div class="users-photo__wrapper">
 					<p class="users-photo__description">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+
+					<div class="users-photo__item users-photo__item--panorama-of-a-day">
+						<picture>
+							<source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg, img/panorama-desktop@2x.jpg 2x">
+							<source media="(min-width: 768px)" srcset="img/panorama-tablet@1x.jpg, img/panorama-tablet@2x.jpg 2x">
+							<img class="users-photo__photo users-photo__photo--panorama-of-a-day" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Фото пользователя">
+						</picture>							
+						<div class="users-photo__comment users-photo__comment--panorama-of-a-day">
+							<blockquote class="users-photo__comment-item users-photo__comment-item--panorama-of-a-day">
+								<cite class="users-photo__author-name users-photo__author-name--panorama-of-a-day">Анна <span class="users-photo__time">(5 минут назад)</span></cite>
+								<p class="users-photo__quote users-photo__quote--panorama-of-a-day">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+								<p class="users-photo__likes users-photo__likes--panorama-of-a-day">Нравится: 215</p>
+							</blockquote>							
+						</div>
+					</div>
+
 					<ul class="users-photo__list site-list">
 						<li class="users-photo__item">
-							<img class="users-photo__photo users-photo--panorama-of-a-day" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Фото пользователя">
-							<div class="users-photo__comment">
-								<blockquote class="users-photo__comment-item">
-								<cite class="users-photo__author-name">Анна <span class="users-photo__time">(5 минут назад)</span></cite>
-								<p class="users-photo__quote">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-								</blockquote>
-								<p class="users-photo__likes">Нравится: 215</p>
-							</div>
-						</li>
-						<li class="users-photo__item">
-							<img class="users-photo__photo" src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Фото пользователя">
+							<picture>
+								<source media="(min-width: 1200px)" srcset="img/photo-1-desktop@1x.jpg, img/photo-1-desktop@2x.jpg 2x">
+								<source media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.jpg, img/photo-1-tablet@2x.jpg 2x">
+								<img class="users-photo__photo" src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Фото пользователя">
+							</picture>
 							<div class="users-photo__comment">
 								<blockquote class="users-photo__comment-item">
 									<cite class="users-photo__author-name">Левон <span class="users-photo__time">(5 часов назад)</span></cite>
@@ -75,7 +85,11 @@
 							</div>
 						</li>
 						<li class="users-photo__item">
-							<img class="users-photo__photo" src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Фото пользователя">
+							<picture>
+								<source media="(min-width: 1200px)" srcset="img/photo-2-desktop@1x.jpg, img/photo-2-desktop@2x.jpg 2x">
+								<source media="(min-width: 768px)" srcset="img/photo-2-tablet@1x.jpg, img/photo-2-tablet@2x.jpg 2x">
+								<img class="users-photo__photo" src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Фото пользователя">
+							</picture>
 							<div class="users-photo__comment">
 								<blockquote class="users-photo__comment-item">
 									<cite class="users-photo__author-name">Антон <span class="users-photo__time">(12 часов назад)</span></cite>
@@ -85,7 +99,11 @@
 							</div>
 						</li>
 						<li class="users-photo__item">
-							<img class="users-photo__photo" src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Фото пользователя">
+							<picture>
+								<source media="(min-width: 1200px)" srcset="img/photo-3-desktop@1x.jpg, img/photo-3-desktop@2x.jpg 2x">
+								<source media="(min-width: 768px)" srcset="img/photo-3-tablet@1x.jpg, img/photo-3-tablet@2x.jpg 2x">
+								<img class="users-photo__photo" src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Фото пользователя">
+							</picture>
 							<div class="users-photo__comment">
 								<blockquote class="users-photo__comment-item">
 									<cite class="users-photo__author-name">Борис <span class="users-photo__time">(20 часов назад)</span></cite>
@@ -95,7 +113,11 @@
 							</div>
 						</li>
 						<li class="users-photo__item">
-							<img class="users-photo__photo" src="img/photo-4-mobile@1x.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="Фото пользователя">
+							<picture>
+								<source media="(min-width: 1200px)" srcset="img/photo-4-desktop@1x.jpg, img/photo-4-desktop@2x.jpg 2x">
+								<source media="(min-width: 768px)" srcset="img/photo-4-tablet@1x.jpg, img/photo-4-tablet@2x.jpg 2x">
+								<img class="users-photo__photo" src="img/photo-4-mobile@1x.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="Фото пользователя">
+							</picture>
 							<div class="users-photo__comment">
 								<blockquote class="users-photo__comment-item">
 									<cite class="users-photo__author-name">Сергей <span class="users-photo__time">(25 часов назад)</span></cite>
@@ -105,7 +127,11 @@
 							</div>
 						</li>
 						<li class="users-photo__item">
-							<img class="users-photo__photo" src="img/photo-5-mobile@1x.jpg" srcset="img/photo-5-mobile@2x.jpg 2x" alt="Фото пользователя">
+							<picture>
+								<source media="(min-width: 1200px)" srcset="img/photo-5-desktop@1x.jpg, img/photo-5-desktop@2x.jpg 2x">
+								<source media="(min-width: 768px)" srcset="img/photo-5-tablet@1x.jpg, img/photo-5-tablet@2x.jpg 2x">
+								<img class="users-photo__photo" src="img/photo-5-mobile@1x.jpg" srcset="img/photo-5-mobile@2x.jpg 2x" alt="Фото пользователя">
+							</picture>
 							<div class="users-photo__comment">
 								<blockquote class="users-photo__comment-item">
 									<cite class="users-photo__author-name">Максим <span class="users-photo__time">(40 часов назад)</span></cite>
@@ -115,7 +141,11 @@
 							</div>
 						</li>
 						<li class="users-photo__item">
-							<img class="users-photo__photo" src="img/photo-6-mobile@1x.jpg" srcset="img/photo-6-mobile@2x.jpg 2x" alt="Фото пользователя">
+							<picture>
+								<source media="(min-width: 1200px)" srcset="img/photo-6-desktop@1x.jpg, img/photo-6-desktop@2x.jpg 2x">
+								<source media="(min-width: 768px)" srcset="img/photo-6-tablet@1x.jpg, img/photo-6-tablet@2x.jpg 2x">
+								<img class="users-photo__photo" src="img/photo-6-mobile@1x.jpg" srcset="img/photo-6-mobile@2x.jpg 2x" alt="Фото пользователя">
+							</picture>
 							<div class="users-photo__comment">
 								<blockquote class="users-photo__comment-item">
 									<cite class="users-photo__author-name">Надежда <span class="users-photo__time">(45 часов назад)</span></cite>
@@ -131,35 +161,46 @@
 			
 			<form class="photo-submit" method="get" action="https://echo.htmlacademy.ru">
 				<div class="photo-submit__wrapper">
-					<img class="photo-submit__image" src="img/photo-7-mobile@1x.jpg" srcset="img/photo-7-mobile@2x.jpg 2x" alt="Фото для редактирования">
-					<ul class="photo-submit__buttons site-list">
-						<li class="photo-submit__items photo-submit__items--crop">
-							<span class="visually-hidden">Обрезать</span>
-							<svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
-								<path fill="none" d="M0,0h48v48H0V0z"/>
-								<path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
-							</svg>							
-							</li>
-						<li class="photo-submit__items photo-submit__items--fill">
-							<span class="visually-hidden">Залить</span>
-							<svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
-								<path fill="none" d="M0,0h48v48H0V0z"/>
-								<path d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"/>
-								<rect y="40" width="48" height="3"/>
-							</svg>							
-						</li>
-						<li class="photo-submit__items photo-submit__items--bright">
-							<span class="visually-hidden">Яркость</span>
-							<svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
-								<path d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
-								<path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
-							</svg>							
-						</li>
-					</ul>
-					<input type="range" min="0" max="100" step="1" value="50"> 
-					<div class="photo-submit__buttons">
-						<button type="submit" class="photo-submit-button">Запостить</button>
-						<button type="reset" class="photo-submit-button" disabled>Отмена</button>
+					<picture>
+						<source media="(min-width: 1200px)" srcset="img/photo-7-desktop@1x.jpg, img/photo-7-desktop@2x.jpg 2x">
+						<source media="(min-width: 768px)" srcset="img/photo-7-tablet@1x.jpg, img/photo-7-tablet@2x.jpg 2x">
+						<img class="photo-submit__image" src="img/photo-7-mobile@1x.jpg" srcset="img/photo-7-mobile@2x.jpg 2x" alt="Фото пользователя">
+					</picture>
+					<div class="photo-submit__right-side">
+						<div class="photo-submit__adjust-buttons">
+							<ul class="photo-submit__adjust-list site-list">
+								<li class="photo-submit__item">
+									<span class="visually-hidden">Обрезать</span>
+									<svg class="photo-submit__icon photo-submit__icon--crop photo-submit__icon--active" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+										<path fill="none" d="M0,0h48v48H0V0z"/>
+										<path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
+									</svg>
+									<input class="photo-submit__slider photo-submit__slider--crop photo-submit__slider--active" type="range" min="0" max="100" step="1" value="50">
+								</li>
+								<li class="photo-submit__item">
+									<span class="visually-hidden">Залить</span>
+									<svg class="photo-submit__icon photo-submit__icon--fill" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+										<path fill="none" d="M0,0h48v48H0V0z"/>
+										<path d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"/>
+										<rect y="40" width="48" height="3"/>
+									</svg>
+									<input class="photo-submit__slider photo-submit__slider--fill" type="range" min="0" max="100" step="1" value="50">
+								</li>
+								<li class="photo-submit__item">
+									<span class="visually-hidden">Яркость</span>
+									<svg class="photo-submit__icon photo-submit__icon--bright" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
+										<path d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
+										<path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
+									</svg>
+									<input class="photo-submit__slider photo-submit__slider--bright" type="range" min="0" max="100" step="1" value="50">
+								</li>
+							</ul>
+							<!-- <div class="photo-submit__sliders"></div> -->
+						</div>
+						<div class="photo-submit__sumbit-buttons">
+							<button type="submit" class="photo-submit__sumbit-button">Запостить</button>
+							<button type="reset" class="photo-submit__sumbit-button photo-submit__sumbit-button--inactive" disabled>Отмена</button>
+						</div>
 					</div>
 				</div>
 			</form>

@@ -19,22 +19,35 @@
 	margin-bottom: 40px;
 }
 
-.users-photo__item:first-child {
-	width: 320px;
-}
-
 .users-photo__item {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 
 	margin-bottom: 20px;
+
+	&--panorama-of-a-day {
+		width: 320px;
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+.users-photo__photo {
+	display: block;
 }
 
 .users-photo__comment {
 	width: 280px;
+	min-height: 121px;
 
-	padding: 18px;
+	padding: 18px 18px 0;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 
 	background-color: $grey;
 }
@@ -42,6 +55,10 @@
 .users-photo__comment-item {
 	margin: 0;
 	padding: 0;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .users-photo__author-name {
@@ -51,6 +68,7 @@
 
 .users-photo__time {
 	font-weight: 300;
+	font-size: 12px;
 	text-transform: uppercase;
 }
 
@@ -62,7 +80,7 @@
 .users-photo__likes {
 	position: relative;
 
-	margin: 10px 32px 0;
+	margin: 8px 0 20px 34px;
 
 	text-transform: uppercase;
 	font-size: 12px;
@@ -75,7 +93,7 @@
 
 		width: 13px;
 		height: 12px;
-		top: 5px;
+		top: 6px;
 		left: -32px;
 		background-image: url("../img/svg/icon-heart.svg");
 	}
@@ -94,8 +112,6 @@
 	background-color: $grey;
 
 	&__wrapper {
-		width: 320px;
-
 		margin: 0 auto;
 		padding: 0 20px;
 
@@ -106,12 +122,211 @@
 }
 
 .photo-submit__image {
-	margin-top: 20px;
+	margin: 20px 0;
 }
 
-.photo-submit__buttons {
+.photo-submit__adjust-buttons {
+	width: 240px;
+	min-height: 142px;
+	border-bottom: 1px solid $dark-grey;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.photo-submit__adjust-list {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
+
+	position: relative;
 
 	width: 198px;
+}
+
+.photo-submit__icon {
+	fill: transparentize($main-color, 0.7);
+
+	&--active {
+		fill: $pink;
+	}
+}
+
+.photo-submit__slider {
+	display: none;
+
+  -webkit-appearance: none;  
+  appearance: none;
+  width: 100%; 
+  height: 2px;
+  background: $main-color;
+	outline: none;
+	
+	&--active {
+		display: block;
+
+		position: absolute;
+	}
+}
+
+
+.photo-submit__slider::-webkit-slider-thumb {
+  -webkit-appearance: none; 
+	appearance: none;
+	
+  width: 14px;
+	height: 14px;
+
+	border: 2px solid $pink;
+	border-radius: 7px;
+
+	background-color: $grey;
+
+  cursor: pointer;
+}
+
+.photo-submit__slider::-moz-range-thumb {
+  width: 14px;
+	height: 14px;
+
+	border: 2px solid $pink;
+	border-radius: 7px;
+
+	background-color: $grey;
+
+  cursor: pointer;
+}
+
+.photo-submit__sumbit-buttons {
+	min-height: 200px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.photo-submit__sumbit-button {
+	width: 280px;
+	height: 55px;
+
+	border: 3px solid $pink;
+	border-radius: 27px;
+
+	color: $pink;
+	@include font-style (18px, 18px, 700);
+
+	&--inactive {
+		border-color: transparentize($main-color, 0.9);
+		color: transparentize($main-color, 0.9);
+	}
+}
+
+.photo-submit__sumbit-button:nth-child(2) {
+	margin-top: 10px;
+}
+
+@media (min-width: $width-tablet) {
+
+	.users-photo {
+		min-width: 660px;
+	
+		&__wrapper {
+			width: 660px;
+		}
+	}
+	
+	.users-photo__description {
+		@include font-style (18px, 30px);
+	}
+
+	.users-photo__list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.users-photo__item--panorama-of-a-day {
+		width: 660px;
+	}
+
+	.users-photo__comment {
+		width: 300px;
+		min-height: 155px;
+
+		padding: 27px 27px 0;
+
+		&--panorama-of-a-day {
+			width: 620px;
+		}
+
+	}	
+
+	.users-photo__likes {
+	
+		margin: 8px 0 20px 0;
+	
+		&::after {
+			top: 6px;
+			left: 227px;
+		}
+	}
+
+	.users-photo__comment-item--panorama-of-a-day {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.users-photo__author-name--panorama-of-a-day {
+		order: 1;
+	}
+
+	.users-photo__quote--panorama-of-a-day {
+		order: 3;
+		min-width: 260px;
+	}
+
+	.users-photo__likes--panorama-of-a-day {
+		order: 2;
+		margin: 0 33px 0 0;
+
+		&::after {
+			left: 105px;
+		}
+	}
+
+	.users-photo__slogan {
+		@include font-style (18px, 30px);
+	}
+
+	.photo-submit {
+		min-width: 660px;
+		height: 511px;
+	
+		&__wrapper {
+			width: 660px;
+
+			flex-direction: row;
+			justify-content: space-between;
+		}
+	}
+
+	.photo-submit__adjust-list {
+		flex-direction: column;
+	}
+
+	.photo-submit__item {
+		display: flex;
+	}
+
+	.photo-submit__icon {
+		fill: $pink;
+	}
+
+	.photo-submit__slider {
+		display: block;
+		position: relative;
+	}
+
 }
