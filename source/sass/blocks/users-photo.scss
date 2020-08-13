@@ -128,7 +128,6 @@
 .photo-submit__adjust-buttons {
 	width: 240px;
 	min-height: 142px;
-	border-bottom: 1px solid $dark-grey;
 
 	display: flex;
 	flex-direction: column;
@@ -142,8 +141,6 @@
 	align-items: center;
 
 	position: relative;
-
-	width: 198px;
 }
 
 .photo-submit__icon {
@@ -199,15 +196,22 @@
   cursor: pointer;
 }
 
-.photo-submit__sumbit-buttons {
+.photo-submit__submit-buttons {
 	min-height: 200px;
 
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+
+		&__wrapper {
+			height: 122px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
 }
 
-.photo-submit__sumbit-button {
+.photo-submit__submit-button {
 	width: 280px;
 	height: 55px;
 
@@ -221,10 +225,6 @@
 		border-color: transparentize($main-color, 0.9);
 		color: transparentize($main-color, 0.9);
 	}
-}
-
-.photo-submit__sumbit-button:nth-child(2) {
-	margin-top: 10px;
 }
 
 @media (min-width: $width-tablet) {
@@ -312,21 +312,177 @@
 		}
 	}
 
-	.photo-submit__adjust-list {
+	.photo-submit__image {
+		margin-top: 57px;
+	}
+
+	.photo-submit__right-side {
+		display: flex;
 		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.photo-submit__adjust-buttons {
+		width: 300px;
+	}
+
+	.photo-submit__adjust-list {
+		width: 100%;
+
+		flex-direction: column;
+
+		padding-left: 25px;
 	}
 
 	.photo-submit__item {
+		width: 100%;
+		min-height: 70px;
+
 		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		border-bottom: 1px solid $dark-grey;
 	}
 
 	.photo-submit__icon {
+		display: block;
 		fill: $pink;
+
+		&--crop {
+			width: 24px;
+			height: 24px;
+			margin-left: 3px;
+		}
+
+		&--fill {
+			width: 26px;
+			height: 24px;
+			margin-left: 3px;
+		}
+
+		&--bright {
+			width: 16px;
+			height: 16px;
+			margin-left: 8px;
+		}
+
 	}
 
 	.photo-submit__slider {
 		display: block;
 		position: relative;
+
+		width: 202px;
+
+		margin-right: 18px;
+	}
+
+	.photo-submit__submit-buttons {	
+		justify-content: flex-end;
+	}
+
+	.photo-submit__submit-button {
+		width: 260px; 
+
+		margin-left: 27px;
+	}
+
+}
+
+@media (min-width: $width-desktop) {
+
+	.users-photo {
+		min-width: 960px;
+	
+		&__wrapper {
+			width: 960px;
+
+			padding: 0 10px;
+		}
+	}
+
+	.users-photo__item--panorama-of-a-day {
+		width: 1200px;
+	}
+
+	.users-photo__comment--panorama-of-a-day {
+		width: 940px;
+		min-height: 96px;
+	}
+
+	.photo-submit {
+		min-width: 960px;
+		height: 514px;
+	
+		&__wrapper {
+			width: 960px;
+
+			padding: 0 10px;
+
+			flex-direction: row;
+			justify-content: space-between;
+		}
+	}
+	
+	.photo-submit__image {
+		margin-left: 80px;
+		margin-right: 90px;
+	}
+
+	.photo-submit__adjust-buttons {
+		width: 470px;
+	}
+
+	.photo-submit__adjust-list {
+		padding: 0;
+		align-items: flex-start;
+	}
+
+	.photo-submit__item {
+		width: 410px;		
+	}
+
+	.photo-submit__icon {
+	
+		&--crop {
+			width: 44px;
+			height: 44px;
+		}
+
+		&--fill {
+			width: 48px;
+			height: 43px;
+		}
+
+		&--bright {
+			width: 32px;
+			height: 32px;
+			margin-left: 6px;
+		}
+
+	}
+
+	.photo-submit__slider {
+		width: 288px;
+	}
+
+	.photo-submit__submit-buttons {
+
+	
+		&__wrapper {
+			width: 410px;
+
+			display: flex;		
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: flex-end;
+		}
+	}
+
+	.photo-submit__submit-button {
+		width: 183px;
+		margin: 0;
 	}
 
 }
