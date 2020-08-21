@@ -35,6 +35,10 @@
 	}
 }
 
+.users-photo__item:last-child {
+	margin-bottom: 0;
+}
+
 .users-photo__photo {
 	display: block;
 }
@@ -103,7 +107,9 @@
 	display: block;
 	text-align: center;
 
-	margin: 20px 0;
+	line-height: 30px;
+
+	margin: 45px 0;
 }
 
 .photo-submit {
@@ -121,24 +127,27 @@
 	}
 }
 
+.photo-submit__wrapper {
+	position: relative;
+}
+
 .photo-submit__image {
-	margin: 20px 0;
+	margin-top: 20px;
+
+	display: block;
 }
 
 .photo-submit__adjust-buttons {
-	width: 240px;
-	min-height: 142px;
-
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: center;
+	margin-top: 42px;
+	margin-bottom: 60px;
 }
 
 .photo-submit__adjust-list {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+
+	padding: 0 41px;
 
 	position: relative;
 }
@@ -156,7 +165,7 @@
 
   -webkit-appearance: none;  
   appearance: none;
-  width: 100%; 
+  width: 240px; 
   height: 2px;
   background: $main-color;
 	outline: none;
@@ -165,6 +174,9 @@
 		display: block;
 
 		position: absolute;
+
+		top: 83px;
+		left: 20px;
 	}
 }
 
@@ -208,6 +220,17 @@
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
+		}
+
+		&::before {
+			content: "";
+			display: block;
+			position: absolute;
+			top: 555px;
+			left: 0;
+			width: 100%;
+			height: 1px;
+			background-color: #dddfe0;
 		}
 }
 
@@ -306,24 +329,32 @@
 	
 		&__wrapper {
 			width: 660px;
+			height: 457px;
 
 			flex-direction: row;
 			justify-content: space-between;
+			align-items: flex-end;
 		}
 	}
 
-	.photo-submit__image {
-		margin-top: 57px;
-	}
+
 
 	.photo-submit__right-side {
+		min-height: 415px;
+
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
 	}
 
+	.photo-submit__image {
+		margin: 0;
+	}
+
 	.photo-submit__adjust-buttons {
 		width: 300px;
+
+		margin: 0;
 	}
 
 	.photo-submit__adjust-list {
@@ -332,6 +363,7 @@
 		flex-direction: column;
 
 		padding-left: 25px;
+		padding-right: 0;
 	}
 
 	.photo-submit__item {
@@ -373,6 +405,9 @@
 		display: block;
 		position: relative;
 
+		top: 0;
+		left: 0;
+
 		width: 202px;
 
 		margin-right: 18px;
@@ -380,6 +415,11 @@
 
 	.photo-submit__submit-buttons {	
 		justify-content: flex-end;
+
+		
+		&::before {
+			display: none;
+		}
 	}
 
 	.photo-submit__submit-button {
